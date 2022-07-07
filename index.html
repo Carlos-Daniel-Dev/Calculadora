@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculadora">
+        <p id="saida">0</p>
+
+        <div>
+            <button id="btClean" class="botao" onclick="limpar()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">C</button>
+            <button id="btBack" class="botao" onclick="back()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">X</button>
+        </div>
+        <div id="line1">
+            <button id="bt1" class="botao" onclick="mostrar(1)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">1</button>
+            <button id="bt2" class="botao" onclick="mostrar(2)"onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">2</button>
+            <button id="bt3" class="botao" onclick="mostrar(3)"onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">3</button>
+            <button id="btMultiplicar" class="botao" onclick="Addmultiplicacao()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">x</button>
+
+        </div>
+
+        <div id="line2"> 
+            <button id="bt4" class="botao" onclick="mostrar(4)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">4</button>
+            <button id="bt5" class="botao" onclick="mostrar(5)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">5</button>
+            <button id="bt6" class="botao" onclick="mostrar(6)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">6</button>
+
+            <button id="btMenos" class="botao" onclick="Addsubtracao()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">-</button>
+        </div>
+
+        <div id="line3"> 
+            <button id="bt7" class="botao" onclick="mostrar(7)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">7</button>
+            <button id="bt8" class="botao" onclick="mostrar(8)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">8</button>
+            <button id="bt9" class="botao" onclick="mostrar(9)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">9</button>
+
+            <button id="btMais" class="botao" onclick="Addsoma()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">+</button>
+            <button id="btDividir" class="botao" onclick="Adddivisao()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">÷</button>
+        </div>
+        <div id="line4"> 
+            <button id="bt0" class="botao" onclick="mostrar(0)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">0</button>
+
+            <button id="btVirgula" class="botao" onclick="mostrar(11)" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">.</button>
+            <button id="btIgual" class="botao" onclick="calcular()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">=</button>
+            <button class="botao" onclick="testar()" onmouseover="PassouMouse(this)" onmouseout="SaiuMouse(this)">testar</button>
+        </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

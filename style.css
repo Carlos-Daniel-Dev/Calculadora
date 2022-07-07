@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(75, 253, 119);
+}
+#calculadora{
+    margin: 0;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+#saida{
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 280px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+}
+.botao{
+    height: 70px;
+    width: 70px;
+    margin: 0px -2px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+}
+#bt0{
+    width: 140px;
+}
+#btClean{
+    width: 140px;
+}
+#btBack{
+    width: 140px;
+}
+
